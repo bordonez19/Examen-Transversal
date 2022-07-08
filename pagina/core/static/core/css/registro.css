@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/fondo3.jpg) no-repeat center top;
+    background-size: auto;
+    font-family: sans-serif;
+    height: 110vh ;
+  }
+
+  label.error{
+    color: rgb(138, 31, 31);
+    font-style: italic;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  input.error{
+    border-color: #9c9191;
+  }
+
+  input.error:focus{
+    border-color: #a09494;
+    box-shadow: 0 0 0 0.25rem rgba(174, 163, 163, 0.25);
+  }
+
+  a.buton{
+    color: #fff;
+    background: rgb(255, 253, 253);
+    font-size:20px;
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+  }
+  .button{
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .login-box{
+    width: auto;
+    height: auto;
+    margin: 180px;
+    background: hsla(45, 2%, 40%, 0.596) ;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    border-radius: 7px;
+  }
+    
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="button"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff;
+  }
+  .col-12{
+    margin: auto;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn{
+  color: #fff;
+  background-color: black;
+}
+
+@media(max-width: 480px){
+    form{
+        width: 50%;
+    }
+}
