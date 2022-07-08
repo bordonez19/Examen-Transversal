@@ -1,0 +1,48 @@
+{% extends 'core/plantilla.html' %}
+{% load static %}
+    {% block content %}
+    <style>
+        h1 {
+            text-align: center;
+        };
+        
+    </style>
+    <h1 >Listado de Productos En Promoción</h1>
+    <br>
+    <table class="table table-striped table-borderer table-hover align-middle cellspacing  ">
+        <thead>
+            <tr>
+                <th>Nombre producto</th> 
+                <th>Descripcion de producto</th>
+                <th>Descuento</th>
+                <th>Categoria</th>
+                <th>Ver Producto</th>
+                <th>Modificar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in descuentos %}
+            <tr>
+            <td>{{i.producto}}</td>
+            <td>{{i.descripcion}}</td>
+            <td>{{i.descuento}}%</td>
+            <td>{{i.promocion}}</td>
+            <td><a href="{% url 'plantas' %}" class="btn btn-secondary">Ver Producto</a></td>
+            <td><a href="{% url 'modificarPromo' i.producto %}" class="btn btn-secondary">Modificar</a></td>
+            <td><a href="{% url 'eliminar2' i.producto %}" class="btn btn-secondary">Eliminar</a></td>
+
+            </tr>
+
+            {% endfor %}
+        </tbody>
+        
+    </table>
+    <div id="lista-productos" class="d-grid gap-2 col-6 mx-auto">
+        <a class="btn btn-outline-secondary" href="{% url 'crear1' %}">¿Te gustaria sugerir una promoción?</a>
+    </div>
+    <br><br>
+
+
+    {% endblock %}
+  

@@ -1,0 +1,24 @@
+{% extends 'core/plantilla4.html' %}
+{% load static %}
+{% block content %}
+    <div  class= "formulario" >
+        <form action="{% url 'home' %}"id="formulario">
+          <h2 class="titulo">Desuscripción</h2>
+                <label for="nombre" class="form-label">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Juanito Perez" class="form-control"><br>
+                <label for="email" class="form-label">Correo: </label>
+                <input type="email" name="correo" placeholder="juanperez@gmail.com" class="form-control"><br>
+                <label for="numero" class="form-label">Contacto: </label>
+                <input type="numero" name="telefono" placeholder="978463741" class="form-control">
+            <div class="mb-3">
+                <label for="Comentario" class="form-label">Motivo </label>
+                <textarea class="form-control" name="comentario" placeholder="Comentario" rows="3"></textarea>
+            </div>
+            <br>
+            <div class="col-12">
+                <a class="nav-link" href="{% url 'des' %}"><button type="submit" class="btn">Enviar</button></a>
+            </div>
+        </form>
+    </div>
+<br><br>
+    {% endblock %}

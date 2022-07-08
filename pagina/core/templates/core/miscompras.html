@@ -1,0 +1,80 @@
+{% extends 'core/plantilla.html' %}
+{% load static %}
+{% block content %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var toastLiveExample = document.getElementById('liveToast');
+    $("#liveToastBtn").click(function () {
+      var toast = new bootstrap.Toast(toastLiveExample);
+
+      toast.show();
+    });
+  });
+
+  $(document).ready(function () {
+            var toastLiveExample = document.getElementById('liveToast1');
+            $("#liveToastBtn1").click(function () {
+              var toast = new bootstrap.Toast(toastLiveExample);
+        
+              toast.show();
+            });
+          });
+
+</script>
+
+        <section class="textos-header">
+            <h1>Mis compras</h1>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd9JREFUSEu1VdFVAjEQnKlArUCtQK1AqECpQK1ArECtQKlAqUCoQO1AKlArUCpY35xJ3iaEu+OD/MAll53Z3Zk9YsuLW46PjQDMbFeESP72JdYbIAR/DYGHfUE2AZgBOAsAM5KjPln0AjCzOwC3AJYh6A6Ae5Lab12dAGZ2AOAzlib8qlTqwwnJrzaEPgDPAC4ATEleKpiZreytA0kAYlqyKdgfxvN1+xHEx/IABkDpqpkTBTOzMYAHz94FiVnckHwMoNcAzgGIbBO7BPCZqoF6+RjAiKSA0zIznb0A+ADwBkBk0qoBqGlSxzTU3L+/V+o++OKnqP08SHlJ8t+ULmWxOAUwDApRCY7C+RVJPfsM1PCnsLEAoGcFlcLeSQ5KgKymhVr0mEDMzAdPfqj1zGcQL81Jqr7NcpcakLAdmWeZmVmsQtr3AEov1jRJMoBEJ6tPTW0BNOpxRKIh5XapqBmImdHaDGRmfhYl0zmAeJ6dlQBiIdlJTWX6Yq4SaA28qlxPMvYrGVRqPiY5cSzlCX0PRKLWoxW/VGdRoRKxlsIWMbCZCUiSlrmUdaayCF7NwDGTktTEfX+h8v9bHiAZy5e90jpNg1sF1MwXZzwZS2XShycbISWBznHdwb7zeOsAf0SD7RlC0DRIAAAAAElFTkSuQmCC"/>
+            <h2>Arte Cultivo</h2>
+        </section>
+
+        <div id="lista-productos" class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;">
+                </path>
+            </svg>
+        </div>
+    </header>
+<h1 class="titulo">Mis pedidos/compras</h1>
+    <ul class="list-group list-group-flush">
+        
+
+        <li class="list-group-item"> Pedido #312912965   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            02/02/2022 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../static/core/pdf/Boleta.pdf" download class="btn btn-outline-secondary">
+              Descargar Boleta
+              </a>
+            <button type="button" class="btn btn-outline-secondary" id="liveToastBtn1">Seguimiento</button>
+
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+              <div id="liveToast1" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="{% static 'core/img/flor.png' %}" class="rounded me-2" alt="...">
+                  <strong class="me-auto">Arte Cultivo</strong>
+                  <small>2 seg</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Tu pedido esta en preparación
+                </div>
+              </div>
+            </div>
+        </li>
+      </ul>
+<br>
+<br>
+<br>
+
+<script src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'core/js/sweetalert2.min.js' %}"></script>
+
+<script src="{% static 'core/js/carrito.js' %}"></script>
+<script src="{% static 'core/js/pedido.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends 'core/plantilla.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <section  class="contenedor sobre-nosotros">
+            <h2 class="titulo">Sobre Nosotros
+            </h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="{% static 'core/img/1.png' %}" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3 >¿Por qué comprar en Arte Cultivo?</h3>
+                    <p>En Arte Cultivo podras encontrar los mejores productos con las 3 "B", además te aseguramos un Despacho
+                        dentro de 48 horas en la Región Metropolitana.
+                    </p>
+                    <h3>¿Cuales son nuestros objetivos?</h3>
+                    <p>Unos de nuestros primeros objetivos es ayudar a una fundación, sin fines de lucro, por ende por cada
+                        compra que realices estariamos ayudandolos a ellos.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div id="lista-productos" class="contenedor">
+                <h2 class="titulo">Productos Favoritos</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fHN1Y3VsZW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Suculentas">
+                        <div class="hover-galeria">
+                            <a href="{% url 'plantas' %}"><p>Suculentas</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2VyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Flores amarillas">
+                        <div class="hover-galeria">
+                            <a href="{% url 'plantas' %}"><p>Flores</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29pbHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="Tierra">
+                        <div class="hover-galeria">
+                            <a href="{% url 'tierra' %}"><p>Tierra de hoja</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port ">
+                        <img src="https://images.unsplash.com/photo-1510520745063-ceaa7314a820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBvdCUyMGNlcmFtaWN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Maceteros">
+                        <div class="hover-galeria">
+                            <a href="{% url 'maceteros' %}"><p>Maceteros</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1471696035578-3d8c78d99684?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGZsb3dlcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="Flores">
+                        <div class="hover-galeria">
+                            <a href="{% url 'plantas' %}"><p>Flores</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1627923361136-e90e8ec1c06d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGZlcm58ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Helecho">
+                        <div class="hover-galeria">
+                            <a href="{% url 'plantas' %}"><p>Arbustos</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1508013861974-9f6347163ebe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vbnN0ZXJhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="monstera">
+                        <div class="hover-galeria">
+                            <a href="{% url 'plantas' %}"><p>Monsteras</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhbnRzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="plantas">
+                        <div class="hover-galeria">
+                            <a href="{% url 'plantas' %}"><p>Plantas</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo">Nuestro equipo</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'core/img/comu.jpg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Comunidad Vecina</h4>
+                        <p>Nuestro equipo esta conformado por los vecinos de villa dulce, la cual tiene como proposito ayudar
+                            a la fundación perritos y gatitos felices sin fines de lucro
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Consejos</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="https://images.unsplash.com/photo-1619155819282-c9313b38644f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG9ycXVpZGVhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="orquidea">
+                        <h3>¿Cómo cuidar tu orquídea?</h3>
+                        <p>esde Arte Cultivos queremos darte algunos tips para cuidar tus orquídeas, para que no te compliques y veas que con un poco de amor y paciencia puedes tener esta hermosa planta en tu hogar.</p>
+
+                            <p>La variedad de orquídeas que puedes ver en nuestra tienda son las Phalaenopsis mini, y están conformadas por las raíces que deben estar en un musgo adecuado para ellas, no en tierra; las hojas de la planta, las varas florales y sus flores y botones. Cada 2 o 3 años debes cambiarle el musgo, aprovechando a cortarle todas las raíces que estén muertas (las puedes identificar por color negro o secas).</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="https://images.unsplash.com/photo-1472029400112-33bcc050cae7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzE5fHxzdWN1bGVudHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="suculentas">
+                        <h3>¿Cómo cambiar una planta de macetero?</h3>
+                        <p>¿Tu planta ya está demasiado grande para el macetero pero te da miedo cambiarla? ¡No te preocupes! En Arte Cultivos queremos compartir unos tips para hacerlo sin que muera la planta en el intento.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="https://images.unsplash.com/photo-1530968464165-7a1861cbaf9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGxhbnRzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="plantas">
+                        <h3>¡Atrae la buena suerte con estas 7 plantas!</h3>
+                        <p>Desde la antigüedad, la humanidad ha estado íntimamente conectada con el mundo de las plantas, lo que en la era moderna ha llevado a realizar experimentos para demostrar que las plantas pueden sentir o percibir nuestras emociones.</p>
+                        <p>Es por esa razón que muchas culturas le atribuyen propiedades místicas a las plantas, además de las medicinales. Incluso las personas más importantes eran aquellas que tenían un gran conocimiento en el uso de las plantas, como los curanderos y druidas, conocimientos que se han llevado hoy en día a la medicina.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    
+    <script src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/sweetalert2.min.js' %}"></script>
+
+    <script src="{% static 'core/js/carrito.js' %}"></script>
+    <script src="{% static 'core/js/pedido.js' %}"></script>
+
+
+    {% endblock %}

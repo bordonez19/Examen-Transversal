@@ -1,0 +1,29 @@
+{% extends 'core/plantilla.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<style>
+    form.form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 20vh;
+        padding: 10px 100px;
+    }
+</style>
+<h1 class="titulo">Que te gustaría que este en promoción?</h1>
+<form id="lista-productos" class="form"  action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <br><br>
+    <button  type="submit" class="btn btn-primary">Agregar promoción</button>
+    <br>
+    <button type="reset" class="btn btn-secondary">Limpiar</button>
+</form>
+{{mensaje}}
+<br>
+<br>
+<br>
+
+
+{% endblock %}

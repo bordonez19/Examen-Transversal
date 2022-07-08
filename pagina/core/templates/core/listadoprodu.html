@@ -1,0 +1,41 @@
+{% extends 'core/plantilla.html' %}
+{% load static %}
+    {% block content %}
+    <style>
+        h1 {
+            text-align: center;
+        };
+        
+    </style>
+    <h1 >Listado de Productos deseados</h1>
+    <br>
+    <table id="lista-productos" class="table table-striped table-borderer table-hover align-middle cellspacing  ">
+        <thead>
+            <tr>
+                <th>Nombre de Producto</th> 
+                <th>Descripcion de producto</th>
+                <th>Precio</th>
+                <th>Imagen producto</th>
+                <th>Categoria</th>
+                <th>Modificar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in productos %}
+            <tr>
+            <td>{{i.nombre}}</td>
+            <td>{{i.descripcion}}</td>
+            <td>{{i.precio}}</td>
+            <td><img src="{{i.imagen}} " width="125" height="125" /></td>
+            <td>{{i.categoria}}</td>
+            <td><a href="{% url 'modificar' i.nombre %}" class="btn btn-secondary">Modificar</a></td>
+            <td><a href="{% url 'eliminar' i.nombre %}" class="btn btn-secondary">Eliminar</a></td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% endblock %}
+  

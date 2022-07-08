@@ -1,0 +1,29 @@
+{% extends 'core/plantilla.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<style>
+    form.form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 20vh;
+        padding: 10px 100px;
+    }
+</style>
+<h1 class="titulo">Agregar producto a lista de favoritos</h1>
+<form id="lista-productos" class="form"  action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <br><br>
+    <button  type="submit" class="btn btn-primary">Agregar a productos deseados</button>
+    <br>
+    <button type="reset" class="btn btn-secondary">Limpiar</button>
+</form>
+{{mensaje}}
+<br>
+<br>
+<br>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'core/plantilla4.html' %}
+{% load static %}
+{% block content %}
+    <section class="course container">
+        <figure class="course__picture">
+            <img  src="{% static 'core/img/perro.jpg' %}" class="course__img">
+        </figure>
+        <div id="lista-productos" class="course__about">
+            <h2 class="title">¿Quieres Suscribirte?</h2>
+            <p class="about__paragraph">Si deseas pertenecer a la fundación, puedes suscribirte pinchando el botón de abajo!
+            </p>
+            <br>
+            <a href="{% url 'sus' %}" class="cta1">Suscribete</a>
+        </div>
+    </section>
+<br>
+<br>
+
+
+
+{% endblock %}

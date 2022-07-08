@@ -1,0 +1,186 @@
+{% extends 'core/plantilla5.html' %}
+{% load static %}
+{% block content %}
+        <div class="carrusel-test">
+            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXFJREFUSEvNlNsxBkEQRs8fARkgAkSADIgAESACRIAIEAEZIAJkQASIgPq2urd6x9w8bJWu2oednvnO9GV6wcy2mFmffwc4sIhveiP/SwQSvzbhQ6AL0gvYAJ6TW28CL61IegESWk/EtCZI1XoAx8BFQeUEuKwRImAVeMts1tpKQUS+tYxv1IqAbwOoeFfApx08A04LgHNAftkycASoGQQYtFOA60hcBwWSbQP3wJL9f9maF1lp1CUEcfsFkKgL+KZHYM+iUSfp34ESl+CdwWKQusAAixHo8FYmFRLaCRBtcfEHQODUnhwaAcr9fiHXEeL5LonLf2u1mEQQX2qOE/s+9y7imfGlxwiUs49CBL7sRVe3lEz5VxcNXZg+tFqaGuzRPaYnBxBZ4afd1Cs+uX0OoLXaaGiB1NJ6L6OVZlGr4DlQdoTXht2uDbLSHHLIu7WkP8IJvDVN1VkC6VN9fGS/Wq2UjklK0tBagFbOm/7ZAT/qckUZVC8vugAAAABJRU5ErkJggg=="/><h5 class="nombre">Arte Cultivo</h5>
+                  <div class="carousel-item active" data-bs-interval="2000">
+                   <img src="{% static 'core/img/flower1.jpg' %}" class="d-block w-100" alt="..." ></a>
+                    <div class="carousel-caption col-sm-8 d-none d-md-block">
+                      <h5 class="nombre">Flores</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'core/img/flower2.jpg' %}" class="d-block w-100" alt="..." ></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="nombre">Plantas</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'core/img/flower3.jpg' %}" class="d-block w-100" alt="..." ></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="nombre">Arbustos</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+    <main>
+        
+        <div class="container" id="lista-productos">
+            <br><br>
+            <h2 class="titulo">Plantas y Flores</h2>
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Margaritas</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">1990</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Margaritas de temporada</li>
+                            <li>Stock: 15</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Plantas Exterior </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1630749608343-51a53e1a77bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">5690</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Plantas para exterior</li>
+                            <li>Stock: 9</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Variedad Tulipanes</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1488928741225-2aaf732c96cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">2290</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Tulipanes variedad de colores</li>
+                            <li>Stock: 10</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Variedad Suculentas</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1586275381277-ef645628e280?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class=""></span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Variedad de suculentas</li>
+                            <li>Stock: 11</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Arbusto Pequeño</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1605388028662-77cfb95b4e70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">5769</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Arbustos para interiores</li>
+                            <li>Stock: 9</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Arbusto Tipo Bonsai</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">10990</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Arbusto con corte bonsai</li>
+                            <li>Stock: 10</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+
+        </div>
+
+            <section class="about-services">
+                <div class="contenedor">
+                    <h2 class="titulo">Como cuidar tu jardín</h2>
+                    <div class="servicio-cont">
+                        
+                               
+                        <div class="servicio-ind">
+                            <img src="{% static 'core/img/tip3.jpg' %}" alt="">
+                            <h3>Cuidados de la peperomia cuchara</h3>
+                            <p>Esta Peperomia cuchara, es unas de las estrellas de la tienda, tiene una caracteristica muy especial, le gusta estar cerca de la luz (no sol directo) pero pegada a una ventana, de todas formas el sol de mañana o sol de la tarde le hace muy bien!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
+        <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'core/js/sweetalert2.min.js' %}"></script>
+    
+        <script src="{% static 'core/js/carrito.js' %}"></script>
+        <script src="{% static 'core/js/pedido.js' %}"></script>
+
+    {% endblock %}

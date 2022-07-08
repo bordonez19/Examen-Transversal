@@ -1,0 +1,47 @@
+{% extends 'core/plantilla.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <section  class="contenedor sobre-nosotros">
+            <h2 class="titulo">Sobre Nosotros
+            </h2>
+            <div id="lista-productos" class="contenedor-sobre-nosotros">
+                <img src="{% static 'core/img/1.png' %}" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3>¿Por qué comprar en Arte Cultivo?</h3>
+                    <p>En Arte Cultivo podras encontrar los mejores productos con las 3 "B", además te aseguramos un Despacho
+                        dentro de 48 horas en la Región Metropolitana.
+                    </p>
+                    <h3>¿Cuales son nuestros objetivos?</h3>
+                    <p>Unos de nuestros primeros objetivos es ayudar a una fundación, sin fines de lucro, por ende por cada
+                        compra que realices estariamos ayudandolos a ellos.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="clientes contenedor">
+            <h2 class="titulo">Nuestro equipo</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'core/img/comu.jpg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Comunidad Vecina</h4>
+                        <p>Nuestro equipo esta conformado por los vecinos de villa dulce, la cual tiene como proposito ayudar
+                            a la fundación perritos y gatitos felices sin fines de lucro
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/sweetalert2.min.js' %}"></script>
+
+    <script src="{% static 'core/js/carrito.js' %}"></script>
+    <script src="{% static 'core/js/pedido.js' %}"></script>
+
+    {% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'core/plantilla2.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form class="login-box" id="formulario" action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <div class="d-grid gap-2 col-6 mx-auto">
+    <button type="submit" class="btn btn-secondary">Iniciar Sesion</button>
+  </div>
+  <br>
+  <br>
+  <br>
+</form>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <a class="btn btn-secondary" href="{% url 'registro' %}">¿No tienes una cuenta? Registrate</a>
+  </div>
+{% endblock %}

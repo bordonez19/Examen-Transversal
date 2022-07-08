@@ -1,0 +1,81 @@
+{% extends 'core/plantilla7.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <div id="lista-producto" class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <form  action="#" >
+                        
+
+                        <div id="carrito" class="form-group table-responsive" >
+                            <table class="table" id="lista-compra" >
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody >
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">Subtotal :</th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">IVA 19% :</th>
+                                    <th scope="col">
+                                        <p id="igv"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">Total :</th>
+                                    <th scope="col">
+                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="{% url 'home' %}" class="btn btn-secondary btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <a href="{% url 'miscompras' %}" class="btn btn-secondary btn-block" id="procesar-compra">Realizar compra</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <br>
+    </main>
+
+    <!---->
+    <script src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/sweetalert2.min.js' %}"></script>
+
+    <script src="{% static 'core/js/carrito.js' %}"></script>
+    <script src="{% static 'core/js/compra.js' %}"></script>
+
+    {% endblock %}
