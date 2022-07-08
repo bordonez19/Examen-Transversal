@@ -1,0 +1,4 @@
+alter session set "_ORACLE_SCRIPT"=true;
+create user prueba1 identified by prueba1
+grant connect, resource to prueba1
+alter user prueba1 default tablespace users quota unlimited on users;
