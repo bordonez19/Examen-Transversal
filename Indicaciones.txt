@@ -1,0 +1,1 @@
+En la api de whatsapp que esta en plantilla.html y en las otras 7, esta con mi número de telefono, ahi si quieren ver como funciona tienen que agregarle su numero desde el 9 en adelante, sin el +56.
